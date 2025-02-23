@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div class="container">
+    <div class="top-bar">
+        
+        
+    
+        <div class="navbar">
+            <div class="nav-left">
+                <a href="#home" class="nav-item">To-Do</a>
+                <a href="#shop" class="nav-item">Shop</a>
+                <a href="#feed" class="nav-item">Feed</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+<section id="home" class="active">
+    <h1>To Do List</h1>
+    <p>What Tasks you got on your mind today?? :)</p>
+    <div class="content-wrapper">
+        <img src="bg-assets/Background-1.jpeg" alt="Left Image" class="side-image left-image">
+        <div class="container-1">    
+            <input type="text" id="task-input" class="task-input" placeholder="Add a task...">
+            <select id="difficulty" class="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="add-task-btn" class="add-task-btn">Add Task</button>
+            <p>Coins: <span id="coin-count">0</span></p>
+            <ul id="task-list" class="task-list"></ul>
+        </div>
+        <img src="bg-assets/Background.jpeg" alt="Right Image" class="side-image right-image">
+    </div>
+</section>
+
+
+
+    <section id="shop">
+        <h1>Food-Store</h1>
+        <p>Buy Food For Your Wuxian :3</p>
+        <div class="product-card-container">
+            <div class="product-card">
+                <img src="food-assets/cutlet with eggs.jpeg" alt="Cutlet With Eggs" />
+                <div class="product-card-content">
+                    <h3>Cutlet With Eggs</h3>
+                    <p>A delicious cutlet served with eggs for a protein-packed meal.</p>
+                    <div class="product-price">
+                        <h3>40 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Cutlet With Eggs" data-price="40">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/Cutlet.jpeg" alt="Cutlet" />
+                <div class="product-card-content">
+                    <h3>Cutlet</h3>
+                    <p>Crunchy and flavorful cutlet, perfect as a snack or side dish.</p>
+                    <div class="product-price">
+                        <h3>40 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Cutlet" data-price="40">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/eggs with sausage.jpeg" alt="Eggs With Sausage" />
+                <div class="product-card-content">
+                    <h3>Eggs With Sausage</h3>
+                    <p>A hearty combination of eggs and sausages for a fulfilling meal.</p>
+                    <div class="product-price">
+                        <h3>50 Coins</h3>
+                    </div> 
+                    <button class="buy" data-name="Eggs With Sausage" data-price="50">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/fish.jpeg" alt="Fish" />
+                <div class="product-card-content">
+                    <h3>Fish</h3>
+                    <p>Fresh and tender fish, cooked to perfection.</p>
+                    <div class="product-price">
+                        <h3>60 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Fish" data-price="60">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/Lunchbox.jpeg" alt="Lunchbox" />
+                <div class="product-card-content">
+                    <h3>Lunchbox</h3>
+                    <p>A wholesome meal packed with a variety of flavors.</p>
+                    <div class="product-price">
+                        <h3>40 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Lunchbox" data-price="40">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/Meal.jpeg" alt="Meal" />
+                <div class="product-card-content">
+                    <h3>Meal</h3>
+                    <p>A complete meal to satisfy your hunger.</p>
+                    <div class="product-price">
+                        <h3>60 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Meal" data-price="60">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/momos.jpeg" alt="Momos" />
+                <div class="product-card-content">
+                    <h3>Momos</h3>
+                    <p>Steamed dumplings with a delicious filling.</p>
+                    <div class="product-price">
+                        <h3>40 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Momos" data-price="40">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/Omurice.jpeg" alt="Omurice" />
+                <div class="product-card-content">
+                    <h3>Omurice</h3>
+                    <p>Japanese-style omelette over fried rice.</p>
+                    <div class="product-price">
+                        <h3>60 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Omurice" data-price="60">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/Pasta.jpeg" alt="Pasta" />
+                <div class="product-card-content">
+                    <h3>Pasta</h3>
+                    <p>Classic pasta with rich sauce and herbs.</p>
+                    <div class="product-price">
+                        <h3>80 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Pasta" data-price="80">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/ramen with green soup.jpeg" alt="Ramen With Green Soup" />
+                <div class="product-card-content">
+                    <h3>Ramen With Green Soup</h3>
+                    <p>Flavorful ramen served in a unique green broth.</p>
+                    <div class="product-price">
+                        <h3>100 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Ramen With Green Soup" data-price="100">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/ramen with less toppings.jpeg" alt="Ramen (with less toppings)" />
+                <div class="product-card-content">
+                    <h3>Ramen (with less toppings)</h3>
+                    <p>A simple yet delicious ramen with fewer toppings.</p>
+                    <div class="product-price">
+                        <h3>95 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Ramen (with less toppings)" data-price="95">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/Ramen.jpeg" alt="Ramen" />
+                <div class="product-card-content">
+                    <h3>Ramen</h3>
+                    <p>Authentic Japanese ramen with a rich broth.</p>
+                    <div class="product-price">
+                        <h3>100 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Ramen" data-price="100">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/spring rolls.jpeg" alt="Spring Rolls" />
+                <div class="product-card-content">
+                    <h3>Spring Rolls</h3>
+                    <p>Crunchy and fresh spring rolls with a tasty filling.</p>
+                    <div class="product-price">
+                        <h3>80 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Spring Rolls" data-price="80">Buy</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <img src="food-assets/strawberry cake.jpeg" alt="Strawberry Cake" />
+                <div class="product-card-content">
+                    <h3>Strawberry Cake</h3>
+                    <p>Soft and fluffy cake topped with fresh strawberries.</p>
+                    <div class="product-price">
+                        <h3>200 Coins</h3>
+                    </div>
+                    <button class="buy" data-name="Strawberry Cake" data-price="200">Buy</button>
+                </div>
+            </div>
+            
+            
+            
+    </section>
+
+    <section id="feed">
+        <h1>Feeding Time?</h1>
+        <p>did u forget feeding him today too?</p>
+        
+
+        <div id="hunger-container">
+          <div id="hunger-bar-container">
+            <div id="hunger-bar" style="width: 100%;">100%</div>
+          </div>
+        </div>
+        
+
+        <div id="character-container">
+          <img id="character-image" src="character_full.png" alt="Character" />
+        </div>
+        
+        <div id="inventory-container">
+          <h2>Inventory</h2>
+          <ul id="inventory-list"></ul>
+        </div>
+        <button id="feed-btn">Feed</button>
+      </section>
+
+    <div id="notification-box"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
