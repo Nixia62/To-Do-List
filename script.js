@@ -132,7 +132,7 @@ feedButton.addEventListener("click", function () {
         localStorage.setItem("purchasedItems", purchasedItems.join(","));
         updateFeed();
         
-        hunger = Math.min(hunger + 8, 100); 
+        hunger = Math.min(hunger + 20, 100); 
         updateHungerDisplay();
 
 }
